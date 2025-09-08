@@ -3,7 +3,7 @@
             font-weight: bold;
             color: #ffffff;
             background-color: rgb(19, 176, 68);
-            border-radius: 10px ;
+            border-radius: 10px;
             border: none;
             display: flex;
             flex-grow: 1;
@@ -34,7 +34,7 @@
             color: #ffffff;
             background-color: rgb(174, 3, 117);
             border-radius: 10px;
-             display: flex;
+            display: flex;
             flex-grow: 1;
             height: 50px;
             justify-content: center;
