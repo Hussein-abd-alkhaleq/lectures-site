@@ -2,15 +2,14 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css">
     <style>
-
         .span1 {
             font-size: 100%;
             font-weight: bold;
             background-color: rgb(148, 142, 142);
             color: white;
-            
+
             display: flex;
             flex-grow: 1;
             justify-content: center;
@@ -25,29 +24,69 @@
             font-weight: bold;
             background-color: rgb(142, 142, 142);
             color: white;
-            
             display: flex;
             flex-grow: 1;
             justify-content: center;
             align-items: center;
             text-align: center;
             height: 70px;
-              font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-              
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
+        .menu {
+            transform: translateX(-110%);
+            transition: transform 0.8s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            width: 50%;
+            height: 100%;
+            background-color: rgb(207, 207, 232);
+            position: absolute;
+            left: 5px;
+            top: 1%;
+        }
+
+        .menu.show {
+            transform: translateX(0);
+        }
     </style>
 </head>
 
 
 <body>
 
-    <div style="display: flex; justify-content: center; padding-top: 1%;">
-        <img src="images/logo-org.png" style="width: 35%;">
+    <div style="display: flex;">
+
+        <div style="flex: 1; display: flex; justify-content: center; align-items: center;">
+            <button id="menuBtn" onclick="menu()" style="font-weight: bolder;">☰</button>
+        </div>
+
+
+
+        <div id="menu" class="menu">
+            <div style="width: 100%; flex:2; display: flex; justify-content: center; align-items: center;">
+                <button class="menu-item-btn" onclick="window.location.href=''">الصفحة الرئيسية</button>
+            </div>
+
+            <div style="width: 100%; flex:1; display: flex; justify-content: center ; align-items: center;">
+                <button class="menu-item-btn">من نحن</button>
+            </div>
+        </div>
+
+
+
+        <div style="flex: 1; display: flex; justify-content: center; padding-top: 1%;">
+            <img src="images/logo-org.png" style="width: 100%;">
+        </div>
+
+        <div style="flex: 1;"></div>
+
     </div>
 
-
-    <div style="margin-top: 1rem; margin-bottom: 10%; font-size: 90%;font-weight: bold; color: chocolate; display: flex; justify-content: center; text-align: center;">
+    <div
+        style="margin-top: 1rem; margin-bottom: 10%; font-size: 90%;font-weight: bold; color: chocolate; display: flex; justify-content: center; text-align: center;">
         <span> تطبيق مخصص لشرح و تلخيص دروس الحاسوب </span>
     </div>
 
@@ -58,20 +97,47 @@
 
 
     <div style="display: flex; justify-content: space-around;margin-top: 5%; column-gap: 1%;">
-        <button class="button1" onclick="window.location.href='fifth-class/classes-summaries-index.html'">ملخصات الدروس</button>
-        <button class="button1" onclick="window.location.href='forth-class/classes-summaries-index.html'">ملخصات الدروس</button>
+        <button class="button1" onclick="window.location.href='fifth-class/classes-summaries-index.html'">ملخصات
+            الدروس</button>
+        <button class="button1" onclick="window.location.href='forth-class/classes-summaries-index.html'">ملخصات
+            الدروس</button>
     </div>
 
     <div style="display: flex;justify-content: space-around;margin-top: 4%; column-gap: 1%;">
-        <button class="button2" onclick="window.location.href='fifth-class/chapters-questions-solve-index.html'">حلول اسئلة الفصول</button>
-        <button class="button2" onclick="window.location.href='forth-class/chapters-questions-solve-index.html'">حلول اسئلة الفصول</button>
+        <button class="button2" onclick="window.location.href='fifth-class/chapters-questions-solve-index.html'">حلول
+            اسئلة الفصول</button>
+        <button class="button2" onclick="window.location.href='forth-class/chapters-questions-solve-index.html'">حلول
+            اسئلة الفصول</button>
     </div>
 
-    <div style="display: flex; justify-content: space-around;margin-top: 4%;column-gap: 1%;" >
-        <button class="button3" onclick="window.location.href='fifth-class/classes-review-questions-solve-index.html'">حلول اسئلة مراجعات الدروس</button>
-        <button class="button3" onclick="window.location.href='forth-class/classes-review-questions-solve-index.html'">حلول اسئلة مراجعات الدروس</button>
+    <div style="display: flex; justify-content: space-around;margin-top: 4%;column-gap: 1%;">
+        <button class="button3"
+            onclick="window.location.href='fifth-class/classes-review-questions-solve-index.html'">حلول اسئلة مراجعات
+            الدروس</button>
+        <button class="button3"
+            onclick="window.location.href='forth-class/classes-review-questions-solve-index.html'">حلول اسئلة مراجعات
+            الدروس</button>
     </div>
 
+    <div style="height: 40px;"></div>
+
+<!-- -->
+    <script>
+        function menu() {
+            let menu = document.getElementById("menu");
+            menu.classList.toggle("show");
+        };
+
+        window.onclick = function (event) {
+            let menu = document.getElementById("menu");
+            let btn = document.getElementById("menuBtn");
+            if (event.target !== btn && !menu.contains(event.target)) {
+                menu.classList.remove("show")
+            }
+        }
+
+
+    </script>
 </body>
 
 </html>

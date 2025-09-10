@@ -46,4 +46,13 @@
             padding: 4%;
         }
 
-        
+        .menu-item-btn {
+            font-size: 80%;
+            font-weight: bold;
+            color: #ffffff;
+            background-color: rgb(174, 3, 117);
+            border-radius: 10px;
+            border: none;
+            box-shadow: #f05dc4 0 10px 20px -10px;
+            padding: 5%;
+        }
