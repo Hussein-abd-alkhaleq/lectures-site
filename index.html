@@ -34,18 +34,18 @@
         }
 
         .menu {
-            transform: translateX(-110%);
-            transition: transform 0.8s ease;
+            position: fixed;
+            height: 50%;
+            width: 50%;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
-            width: 50%;
-            height: 100vh;
-            background-color: rgb(207, 207, 232);
-            position: fixed;
             left: 5px;
             z-index: 999;
+            transform: translateX(-110%);
+            transition: transform 0.8s ease;
+            background-color: rgb(207, 207, 232);
         }
 
         .menu.show {
