@@ -47,13 +47,11 @@
         .main-menu {
             opacity: 95%;
             position: fixed;
-            height: 50%;
+            height: 60%;
             width: 50%;
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
             align-items: center;
-            row-gap: 20px;
             left: 5px;
             z-index: 999;
             transform: translateX(-110%);
@@ -67,10 +65,13 @@
         }
 
         .menu-item-btn {
-            color: #ffffff;
-            background-color: rgb(174, 3, 117);
+            font-size: 90%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #000000;
+            background-color: rgb(227, 116, 125);
             border-radius: 10px;
             border: none;
             box-shadow: #f05dc4 0 10px 20px -10px;
-            padding: 5% 7% 5% 7%;
+            padding: 2% 7% 2% 7%;
+            margin: 2%;
         }
