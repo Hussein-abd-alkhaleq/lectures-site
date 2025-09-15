@@ -1,51 +1,48 @@
-        .button1 {
-            font-size: 80%;
-            font-weight: bold;
+
+      
+     button{
+        font-size: 18px;
+        font-weight: bold;
+     }
+     
+     .button1 {
             color: #ffffff;
-            background-color: rgb(19, 176, 68);
+            background-color: rgb(7, 184, 63);
             border-radius: 10px;
             border: none;
-            display: flex;
-            flex-grow: 1;
-            height: 50px;
-            justify-content: center;
-            align-items: center;
-            box-shadow: #5df0b0 0 10px 20px -10px;
-            padding: 4%;
+            box-shadow: #029857 0 10px 20px -10px;
+            padding: 4% 7% 4% 7%;
+            margin: 2%;
         }
 
         .button2 {
-            font-size: 80%;
-            font-weight: bold;
             color: #ffffff;
             background-color: rgb(59, 97, 173);
             border-radius: 10px;
             border: none;
-            display: flex;
-            flex-grow: 1;
-            height: 50px;
-            justify-content: center;
-            align-items: center;
             box-shadow: #5d9df0 0 10px 20px -10px;
-            padding: 4%;
+            padding: 4% 7% 4% 7%;
+            margin: 2%;
         }
 
         .button3 {
-            font-size: 80%;
-            font-weight: bold;
             color: #ffffff;
             background-color: rgb(174, 3, 117);
             border-radius: 10px;
-            display: flex;
-            flex-grow: 1;
-            height: 50px;
-            justify-content: center;
-            align-items: center;
             border: none;
-            box-shadow: #f05dc4 0 10px 20px -10px;
-            padding: 4%;
+            box-shadow: #e708a4 0 10px 20px -10px;
+            padding: 4% 7% 4% 7%;
+            margin: 2%;
         }
-
+        .button4 {
+            color: #ffffff;
+            background-color: rgb(178, 180, 115);
+            border-radius: 10px;
+            border: none;
+            box-shadow: #e113a3 0 10px 20px -10px;
+            padding: 4% 7% 4% 7%;
+            margin: 2%;
+        }
 
         .main-menu {
             opacity: 95%;
@@ -69,13 +66,10 @@
         }
 
         .menu-item-btn {
-            font-size: 80%;
-            font-weight: bold;
             color: #ffffff;
             background-color: rgb(174, 3, 117);
             border-radius: 10px;
             border: none;
             box-shadow: #f05dc4 0 10px 20px -10px;
-            padding: 5%;
+            padding: 5% 7% 5% 7%;
         }
-        

@@ -7,8 +7,7 @@
 
     <style>
         .span1 {
-            font-size: 100%;
-            font-weight: bold;
+            font-weight: bolder;
             background-color: rgb(148, 142, 142);
             color: white;
             display: flex;
@@ -21,8 +20,7 @@
         }
 
         .span2 {
-            font-size: 100%;
-            font-weight: bold;
+            font-weight: bolder;
             background-color: rgb(142, 142, 142);
             color: white;
             display: flex;
@@ -39,38 +37,34 @@
 
 <body>
     <script src="js.js"></script>
-    
-     <div id="header_part"></div>
+
+    <div id="header_part"></div>
     <script>load_HTML_item("header_part", "header_part.html");</script>
 
+    <h3 style="color: chocolate; text-align: center;"> تطبيق مخصص لشرح و تلخيص دروس الحاسوب </h3>
 
-
-    <div
-        style="margin-top: 1rem; margin-bottom: 10%; font-size: 90%;font-weight: bold; color: chocolate; display: flex; justify-content: center; text-align: center;">
-        <span> تطبيق مخصص لشرح و تلخيص دروس الحاسوب </span>
-    </div>
-
-    <div style="display: flex; column-gap: 1px;">
+    <br>
+    <div style="display: flex; column-gap:4px; margin-bottom: 10px;">
         <span class="span2">حاسوب الخامس اعدادي</span>
         <span class="span1">حـاسـوب الرابـع اعـدادي</span>
     </div>
 
 
-    <div style="display: flex; justify-content: space-around;margin-top: 5%; column-gap: 1%;">
+    <div style="display: flex; justify-content: space-evenly;">
         <button class="button1" onclick="window.location.href='fifth-class/classes-summaries-index.html'">ملخصات
             الدروس</button>
         <button class="button1" onclick="window.location.href='forth-class/classes-summaries-index.html'">ملخصات
             الدروس</button>
     </div>
 
-    <div style="display: flex;justify-content: space-around;margin-top: 4%; column-gap: 1%;">
+    <div style="display: flex; justify-content: space-evenly;">
         <button class="button2" onclick="window.location.href='fifth-class/chapters-questions-solve-index.html'">حلول
             اسئلة الفصول</button>
         <button class="button2" onclick="window.location.href='forth-class/chapters-questions-solve-index.html'">حلول
             اسئلة الفصول</button>
     </div>
 
-    <div style="display: flex; justify-content: space-around;margin-top: 4%;column-gap: 1%;">
+    <div style="display: flex; justify-content: space-evenly;">
         <button class="button3"
             onclick="window.location.href='fifth-class/classes-review-questions-solve-index.html'">حلول اسئلة مراجعات
             الدروس</button>
@@ -79,8 +73,7 @@
             الدروس</button>
     </div>
 
-    <div style="height: 40px;"></div>
-
+    <br>
 </body>
 
 </html>
