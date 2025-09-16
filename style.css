@@ -1,11 +1,20 @@
 
       
-     button{
+     @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+     @import url('https://fonts.googleapis.com/css2?family=Rakkas&display=swap');
+     @import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap');
+     body{
+        font-size: 18px;
+        font-weight: bold;
+     }
+      button{
         font-size: 18px;
         font-weight: bold;
      }
      
+     
      .button1 {
+        font-family: RUBIK;
             color: #ffffff;
             background-color: rgb(7, 184, 63);
             border-radius: 10px;
@@ -16,6 +25,7 @@
         }
 
         .button2 {
+            font-family: rubik;
             color: #ffffff;
             background-color: rgb(59, 97, 173);
             border-radius: 10px;
@@ -26,6 +36,7 @@
         }
 
         .button3 {
+            font-family: rubik;
             color: #ffffff;
             background-color: rgb(174, 3, 117);
             border-radius: 10px;
@@ -65,8 +76,8 @@
         }
 
         .menu-item-btn {
+            font-family: "RubiK", sans-serif;
             font-size: 90%;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: #000000;
             background-color: rgb(227, 116, 125);
             border-radius: 10px;
